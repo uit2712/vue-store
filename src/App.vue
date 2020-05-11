@@ -1,17 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Shopping Cart Example</h1>
+    <hr>
+    <h2>Products</h2>
+    <ProductList/>
+    <hr>
+    <ShoppingCart/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Vue from 'vue'
+import Vuex from 'vuex'
+import ProductList from './components/ProductList.vue'
+import ShoppingCart from './components/ShoppingCart.vue'
+import store from './store'
+import { currency } from './currency'
+
+Vue.use(Vuex)
+Vue.filter('currency', currency);
 
 export default {
   name: 'App',
+  store,
   components: {
-    HelloWorld
+    ProductList,
+    ShoppingCart,
   }
 }
 </script>
