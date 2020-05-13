@@ -1,24 +1,11 @@
-# vue-store
-
-## Project setup
+# Cài đặt các thư viện cần thiết
+## Cài đặt Vuex
+Vuex là 1 thư viện quản lý state cho toàn bộ ứng dụng
+```javascript
+npm install --save vuex
 ```
-npm install
+## Cài đặt axios
+Axios là thư viện hỗ trợ tương tác với RESTful API
+```javascript
+npm install --save axios
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
