@@ -16,7 +16,7 @@ __Axios__ là thư viện hỗ trợ tương tác với __RESTful API__ 1 cách 
 ```javascript
 npm install --save axios
 ```
-## Cấu trúc thư mục và file
+# Cấu trúc thư mục và file
     src
     ├── ...
     ├── api                     # Thư mục chứa thông tin liên quan đến API                
