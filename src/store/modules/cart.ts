@@ -1,4 +1,5 @@
 import shop from '../../api/shop'
+import { StoreOptions, ActionContext, ActionTree, GetterTree } from 'vuex'
 
 // initial state
 // shape: [{ id, quantity }]
@@ -8,7 +9,7 @@ const state = () => ({
 })
 
 // getters
-const getters = {
+const getters: GetterTree<any, any> = {
     cartProducts: (state, getters, rootState) => {
         return state.items.map(({ id, quantity }) => {
             const product = rootState.products.all.find(product => product.id === id)
@@ -28,7 +29,7 @@ const getters = {
 }
 
 // actions
-const actions = {
+const actions: ActionTree<any, any> = {
     checkout({ commit, state }, products) {
         const savedCartItems = [...state.items]
         commit('setCheckoutStatus', null)
@@ -40,7 +41,10 @@ const actions = {
             () => {
                 commit('setCheckoutStatus', 'failed')
                 // rollback to the cart saved before sending the request
-                commit('setCartItems', { items: savedCartItems })
+                commit({
+                    type: 'setCartItems',
+                    items: savedCartItems
+                })
             }
         )
     },
