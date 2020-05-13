@@ -21,10 +21,10 @@ npm install --save axios
     ├── ...
     ├── api                     # Thư mục chứa thông tin liên quan đến API                
     │   ├── index.js            # File cấu hình cho axios (baseUrl, headers,...) gọi tới API
-    │   └── shop.js             # File cấu hình các phương thức 
-    ├── store                    
-    │   ├── modules          
-    │   └── index.js               
-    ├── components
+    │   └── shop.js             # File cấu hình các phương thức lấy dữ liệu về từ API
+    ├── store                   # Cấu hình cho Vuex trong thư mục này
+    │   ├── modules             # Chứa tất cả các modules của store
+    │   └── index.js            # Khai báo store để sử dụng
+    ├── components              # Chứa tất cả các component của ứng dụng
     └── ...
 
