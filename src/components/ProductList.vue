@@ -1,31 +1,26 @@
 <template>
   <ul>
-    <li
+    <ProductItem
       v-for="product in products"
-      :key="product.id">
-      {{ product.title }} - {{ product.price | currency }}
-      <br>
-      <button
-        :disabled="!product.inventory"
-        @click="addProductToCart(product)">
-        Add to cart
-      </button>
-    </li>
+      :product="product"
+      :key="product.id"
+    />
   </ul>
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState } from 'vuex'
 import Vue from 'vue'
+import ProductItem from './ProductItem';
 
 export default Vue.extend({
     name: 'ProductList',
+    components: {
+      ProductItem,
+    },
     computed: mapState({
         products: state => state.products.all,
     }),
-    methods: mapActions('cart', [
-        'addProductToCart'
-    ]),
     created () {
         this.$store.dispatch('products/getAllProducts')
     }

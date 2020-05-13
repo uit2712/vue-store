@@ -2,17 +2,23 @@ import shop from '../../api/shop'
 
 // initial state
 const state = () => ({
-    all: []
+    all: [],
+    errorMessages: [],
 })
 
 // getters
-const getters = {}
+const getters = {
+    getError: (state) => (id) => {
+        return state.errorMessages.find(e => e.productId === id);
+    }
+}
 
 // actions
 const actions = {
     getAllProducts({ commit }) {
-        shop.getProducts(products => {
-            commit('setProducts', products)
+        shop.getAllProducts()
+        .then(result => {
+            commit('setProducts', result.data)
         })
     }
 }
@@ -26,6 +32,15 @@ const mutations = {
     decrementProductInventory(state, { id }) {
         const product = state.all.find(product => product.id === id)
         product.inventory--
+    },
+
+    setErrorMessage(state, { error, productId }) {
+        let errorMsg = state.errorMessages.find(e => e.productId === productId);
+        if (!errorMsg) {
+            state.errorMessages.push({ error, productId });
+        } else {
+            errorMsg.error = error;
+        }
     }
 }
 

@@ -4,7 +4,7 @@ import shop from '../../api/shop'
 // shape: [{ id, quantity }]
 const state = () => ({
     items: [],
-    checkoutStatus: null
+    checkoutStatus: null,
 })
 
 // getters
@@ -45,18 +45,29 @@ const actions = {
         )
     },
 
-    addProductToCart({ state, commit }, product) {
+    addProductToCart({ state, commit }, id) {
         commit('setCheckoutStatus', null)
-        if (product.inventory > 0) {
-            const cartItem = state.items.find(item => item.id === product.id)
-            if (!cartItem) {
-                commit('pushProductToCart', { id: product.id })
+        let errorMsg = { error: '', productId: id };
+        shop.getProductById(id)
+        .then(result => {
+            let product = result.data;
+            if (product && product.inventory > 0) {
+                const cartItem = state.items.find(item => item.id === product.id);
+                if (!cartItem) {
+                    commit('pushProductToCart', { id: product.id });
+                } else {
+                    if (product.inventory - cartItem.quantity > 0) {
+                        commit('incrementItemQuantity', cartItem);
+                    } else {
+                        errorMsg.error = 'Bạn đã nhập quá số lượng tồn kho';
+                        alert(errorMsg.error);
+                    }
+                }
             } else {
-                commit('incrementItemQuantity', cartItem)
+                errorMsg.error = 'Sản phẩm hiện tại đã hết hàng';
             }
-            // remove 1 item from stock
-            commit('products/decrementProductInventory', { id: product.id }, { root: true })
-        }
+            commit('products/setErrorMessage', errorMsg, { root: true });
+        })
     }
 }
 
