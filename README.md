@@ -9,6 +9,7 @@
 # Kiến thức cơ bản
 Bước đầu để bắt tay vào làm việc với __Vuex__ trong __Vuejs__ thì bạn cần có kiến thức cơ bản về __Vuejs__ và __Vuex__.
 - Tài liệu Vue: https://vuejs.org/v2/guide/
+- Những thứ hay ho trong Vue: https://docs.google.com/document/d/1bs0U7eeE7dg365szwmw4Y1cXGVUq2SbDqmcVOykX2W0/edit?usp=sharing
 - Tài liệu Vuex: https://docs.google.com/document/d/1tzy94tX1YrzuxlJhX-I9npDQx2A5biH9cNfQbyttCto/edit?usp=sharing \
 Hoặc bạn có thể tham khảo tài liệu trên trang chủ của vuex: https://vuex.vuejs.org/installation.html
 # Cài đặt Nodejs
