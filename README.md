@@ -1,12 +1,12 @@
 ![Vuex-state-management-library](https://github.com/uit2712/vue-store/blob/images/images/vuex.jpeg)
 # Nội dung
-- [Kiến thức cơ bản về Vuex](#kiến-thức-cơ-bản-về-vuex)
+- [Kiến thức cơ bản](#kiến-thức-cơ-bản)
 - [Cài đặt Nodejs](#cài-đặt-nodejs)
 - [Vue cli](#vue-cli)
 - [Cài đặt các thư viện cần thiết](#cài-đặt-các-thư-viện-cần-thiết)
 - [Cấu trúc thư mục và file](#cấu-trúc-thư-mục-và-file)
 - [Validate trong Vuejs](#validate-trong-vuejs)
-# Kiến thức cơ bản về Vuex
+# Kiến thức cơ bản
 Bước đầu để bắt tay vào làm việc với __Vuex__ trong __Vuejs__ thì bạn cần có kiến thức cơ bản về __Vuejs__ và __Vuex__.
 - Tài liệu Vue: https://vuejs.org/v2/guide/
 - Tài liệu Vuex: https://docs.google.com/document/d/1tzy94tX1YrzuxlJhX-I9npDQx2A5biH9cNfQbyttCto/edit?usp=sharing \
