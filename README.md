@@ -71,5 +71,7 @@ Vue.use(Vuelidate);
 Lúc này trong mỗi component bạn tạo sẽ có thêm 1 option là __validations__, bạn sẽ thực hiện các validation trong đây
 ## Hướng dẫn cơ bản
 https://docs.google.com/document/d/1h2mFPfimdB9mGwmaAFkyTMATYYBm1Sk3yRYfghUUr8Q/edit?usp=sharing
+## Demo
+https://github.com/uit2712/vue-study-more/tree/vuelidate
 ## Tham khảo
 https://vuelidate.js.org/#getting-started
