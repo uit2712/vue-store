@@ -58,3 +58,11 @@ npm install --save axios
 ```
 npm install --save vuelidate
 ```
+## Sử dụng toàn cục
+```javascript
+import Vue from 'vue'
+import Vuelidate from 'vuelidate'
+
+Vue.use(Vuelidate);
+```
+Lúc này trong mỗi component bạn tạo sẽ có thêm 1 option là __validations__, bạn sẽ thực hiện các validation trong đây
