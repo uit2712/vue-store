@@ -38,9 +38,12 @@ npm install --save vuex
 ```
 ## Cài đặt axios
 __Axios__ là thư viện hỗ trợ tương tác với __RESTful API__ 1 cách dễ dàng
+### Cài đặt
 ```javascript
 npm install --save axios
 ```
+### Tài liệu tham khảo
+https://github.com/axios/axios
 # Cấu trúc thư mục và file
     src
     ├── ...
@@ -66,3 +69,7 @@ import Vuelidate from 'vuelidate'
 Vue.use(Vuelidate);
 ```
 Lúc này trong mỗi component bạn tạo sẽ có thêm 1 option là __validations__, bạn sẽ thực hiện các validation trong đây
+## Hướng dẫn cơ bản
+https://docs.google.com/document/d/1h2mFPfimdB9mGwmaAFkyTMATYYBm1Sk3yRYfghUUr8Q/edit?usp=sharing
+## Tham khảo
+https://vuelidate.js.org/#getting-started
