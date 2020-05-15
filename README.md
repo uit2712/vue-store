@@ -14,7 +14,7 @@ Hoặc bạn có thể tham khảo tài liệu trên trang chủ của vuex: htt
 # Cài đặt Nodejs
 Phiên bản: 
 # Vue cli
-__Vue cli__ là 1 trong các framework để lập trình Vuejs \
+__Vue cli__ là 1 trong các framework để lập trình Vuejs
 ## Cài đặt
 ```
 npm install -g @vue/cli
@@ -25,6 +25,7 @@ vue create project-name
 ```
 với __project-name__ là tên của project bạn muốn đặt
 ## Chạy project
+Trước tiên bạn cần phải mở command line trong thư mục project của bạn, sau đó chạy lệnh này
 ```
 npm run serve
 ```
