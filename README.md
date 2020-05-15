@@ -11,6 +11,21 @@ Bước đầu để bắt tay vào làm việc với __Vuex__ trong __Vuejs__ t
 Hoặc bạn có thể tham khảo tài liệu trên trang chủ của vuex: https://vuex.vuejs.org/installation.html
 # Cài đặt Nodejs
 Phiên bản: 
+# Vue cli
+__Vue cli__ là 1 trong các framework để lập trình Vuejs \
+## Cài đặt
+```
+npm install -g @vue/cli
+```
+## Tạo mới project
+```
+vue create project-name
+```
+với __project-name__ là tên của project bạn muốn đặt
+## Chạy project
+```
+npm run serve
+```
 # Cài đặt các thư viện cần thiết
 ## Cài đặt Vuex
 __Vuex__ là 1 thư viện quản lý __state__ cho toàn bộ ứng dụng
@@ -33,4 +48,9 @@ npm install --save axios
     │   └── index.js            # Khai báo store để sử dụng
     ├── components              # Chứa tất cả các component của ứng dụng
     └── ...
-
+# Validate trong Vuejs
+Ở đây mình sẽ sử dụng thư viện Vuelidate
+## Cài đặt Validate
+```
+npm install --save vuelidate
+```
