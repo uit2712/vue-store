@@ -56,8 +56,9 @@ https://github.com/axios/axios
     ├── components              # Chứa tất cả các component của ứng dụng
     └── ...
 # Validate trong Vuejs
-Ở đây mình sẽ sử dụng thư viện Vuelidate
+Ở đây mình sẽ sử dụng thư viện Vee validate
 ## Cài đặt Vee validate
+Dùng phiên bản 3.3.0
 ```
 npm install --save vee-validate@3.3.0
 ```
