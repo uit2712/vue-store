@@ -57,21 +57,11 @@ https://github.com/axios/axios
     └── ...
 # Validate trong Vuejs
 Ở đây mình sẽ sử dụng thư viện Vuelidate
-## Cài đặt Validate
+## Cài đặt Vee validate
 ```
-npm install --save vuelidate
+npm install --save vee-validate@3.3.0
 ```
-## Sử dụng toàn cục
-```javascript
-import Vue from 'vue'
-import Vuelidate from 'vuelidate'
-
-Vue.use(Vuelidate);
-```
-Lúc này trong mỗi component bạn tạo sẽ có thêm 1 option là __validations__, bạn sẽ thực hiện các validation trong đây
 ## Hướng dẫn cơ bản
-https://docs.google.com/document/d/1h2mFPfimdB9mGwmaAFkyTMATYYBm1Sk3yRYfghUUr8Q/edit?usp=sharing
-## Demo
-https://github.com/uit2712/vue-study-more/tree/vuelidate
-## Tham khảo
-https://vuelidate.js.org/#getting-started
+https://docs.google.com/document/d/1ed6Zs5_JaaDn1IolkqQ5yE__Y4qxddXGGi4l5Bq7J0Q/edit?usp=sharing
+## Trang chủ Vee validate
+https://logaretm.github.io/vee-validate/guide/basics.html#validation-provider
