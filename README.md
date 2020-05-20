@@ -6,6 +6,13 @@
 - [Cài đặt các thư viện cần thiết](#cài-đặt-các-thư-viện-cần-thiết)
 - [Cấu trúc thư mục và file](#cấu-trúc-thư-mục-và-file)
 - [Validate trong Vuejs](#validate-trong-vuejs)
+# Code editor
+## Cài đặt Visual Studio Code
+Tải về tại đây: https://code.visualstudio.com/download
+## Cài đặt các extension hỗ trợ
+- Vetur
+- Vue 2 Snippets
+- Vue VSCode Snippets
 # Kiến thức cơ bản
 Bước đầu để bắt tay vào làm việc với __Vuex__ trong __Vuejs__ thì bạn cần có kiến thức cơ bản về __Vuejs__ và __Vuex__.
 - Tài liệu Vue: https://vuejs.org/v2/guide/
