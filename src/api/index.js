@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-export const API_BASE_URL = process.env.ROOT_API;
+export const API_BASE_URL = process.env.VUE_APP_ROOT_API;
+console.log(API_BASE_URL);
 
 export default() => {
     return axios.create({
