@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API_BASE_URL = 'http://my-shop-api.somee.com/api';
+export const API_BASE_URL = process.env.ROOT_API;
 
 export default() => {
     return axios.create({
